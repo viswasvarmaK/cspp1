@@ -9,12 +9,13 @@ Author:VISWAS
 
 Date:2-8-2018
 '''
-S =input()
+S = input()
 COUNT = 0
 for i in S:
     if i in('a','e','i','o','u'):
 	    COUNT = COUNT + 1
 print(COUNT)	
+
 
 
 	
