@@ -12,7 +12,7 @@ Date:2-8-2018
 COUNT = 0
 S = 'azcbobobegghaki'
 for i in S:
-    if char('a','e','i','o','u'):
+    if char('a','e','i','o','u') :
 	    COUNT = COUNT + 1
 print(COUNT)	
 
