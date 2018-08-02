@@ -10,11 +10,11 @@ Author:VISWAS
 Date:2-8-2018
 '''
 count = 0
-s = raw_input("azcbobobegghaki")
+s = 'azcbobobegghaki'
 for i in s:
-	if char('a','e','i','o','u'):
+    if char('a','e','i','o','u'):
 	    count = count + 1
 print(count)	
-    	
+
 
 	
