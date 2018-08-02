@@ -9,12 +9,12 @@ Author:VISWAS
 
 Date:2-8-2018
 '''
-count = 0
-s = 'azcbobobegghaki'
-for i in s:
+COUNT = 0
+S = 'azcbobobegghaki'
+for i in S:
     if char('a','e','i','o','u'):
-	    count = count + 1
-print(count)	
+	    COUNT = COUNT + 1
+print(COUNT)	
 
 
 	
