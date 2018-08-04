@@ -10,17 +10,17 @@ def main():
     '''
     Read number from the input, store it in variable num.
     '''
-N_N = int(input("enter a number"))
+N_N = int(input())
 I_I = 0
 while I_I < N_N:
     I_I = I_I+1
     if I_I%3 == 0 and I_I%5 == 0:
-        print("fizz")
-        print('buzz')
+        print("Fizz")
+        print('Buzz')
     elif I_I%3 == 0:
-        print('fizz')
+        print('Fizz')
     elif I_I%5 == 0:
-        print('buzz')
+        print('Buzz')
     else:
         print(I_I)
 if __name__ == "__main__":
