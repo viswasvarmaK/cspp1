@@ -15,7 +15,7 @@ def main():
         if i_i in '!@#$%^&*':
             i_i = "_"
             s_s = s_s + i_i
-            print(s_s)
+        print(s_s)
 
 if __name__ == "__main__":
     main()
