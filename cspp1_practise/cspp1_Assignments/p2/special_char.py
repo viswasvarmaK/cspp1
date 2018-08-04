@@ -10,14 +10,14 @@ def main():
     Read string from the input, store it in variable str_input.
     '''
     str_input = input()
-    i_i = 0
     s_s = ''
-    while i_i < str_input:
+    for i_i in str_input:
         if i_i in '!@#$%^&*':
             i_i = " "
-            s_s = s_s + i_i
-            i_i = i_i + 1
-        print(s_s)
+        else:
+            i_i = i_i
+        s_s = s_s + i_i
+    print(s_s)
 
 if __name__ == "__main__":
     main()
