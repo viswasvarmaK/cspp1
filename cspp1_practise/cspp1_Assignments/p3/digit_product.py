@@ -10,7 +10,7 @@ def main():
 N_N = int(input())
 I_I = 0
 F_F = 1
-for I_I in range(3):
+for I_I in range(4):
     S_S = N_N % 10
     F_F = F_F * S_S
 print(F_F)
