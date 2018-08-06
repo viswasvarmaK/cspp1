@@ -6,7 +6,7 @@ def paying_debt_off_in_a_year(balance, annual_interest_rate, monthly_payment_rat
     '''
     function to pay debt in an year
     '''
-    i=1
+    i = 1
     balance_copy = balance
     while i <= 12:
         mir = (annual_interest_rate) / 12.0
@@ -14,9 +14,12 @@ def paying_debt_off_in_a_year(balance, annual_interest_rate, monthly_payment_rat
         mub = (balance_copy) - (mmp)
         balance_copy = (mub) + (mir*mub)
         i += 1
-    return "Remaining balance:" + str(round(balance_copy, 2))
+    return "Remaining balance: " + str(round(balance_copy, 2))
 
 def main():
+    '''
+     main function 
+    '''
     data = input()
     data = data.split(' ')
     data = list(map(float, data))
@@ -24,4 +27,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
