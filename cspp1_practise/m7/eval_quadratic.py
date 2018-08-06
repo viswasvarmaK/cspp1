@@ -1,26 +1,27 @@
-# Exercise: eval quadratic
+'''
+Author: VISWAS
+Date: 6-8-2018
+'''
 
-# Write a Python function, evalQuadratic(a, b, c, x), that returns the value of the quadratic a . x 2 + b . x + c
-
-# This function takes in four numbers and returns a single number.
-
-
-def evalQuadratic(a, b, c, x):
-    s_s = (a* (x ** 2)) + (b*x) + c
+def eval_quadratic(a_a, b_b, c_c, x_x):
+    '''function to quadratic equation'''
+    s_s = (a_a* (x_x ** 2)) + (b_b*x_x) + c_c
     return s_s
+
 def main():
+    ''' main function'''
     data = input()
     data = data.split(' ')
     data = list(map(float, data))
     # print(data)
-    for x in range(len(data)):
-        temp = str(data[x]).split('.')
-        if(temp[1] == '0'):
-            data[x] = int(float(str(data[x])))
+    k = len(data)
+    for x_1 in range(k):
+        temp = str(data[x_1]).split('.')
+        if temp[1] == '0':
+            data[x_1] = int(float(str(data[x_1])))
         else:
-            data[x] = data[x]
-    print(evalQuadratic(data[0],data[1],data[2],data[3]))
+            data[x_1] = data[x_1]
+    print(eval_quadratic(data[0], data[1], data[2], data[3]))
 
-if __name__== "__main__":
+if __name__ == "__main__":
     main()
-
