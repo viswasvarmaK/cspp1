@@ -1,5 +1,5 @@
 '''
-Author: Pranav Surampudi
+Author: Viswas
 Date: 3 Aug 2018
 Encoding: UTF-8
 '''
@@ -8,15 +8,15 @@ def main():
     the square root of a given number"""
     num = input()
     epsilon = 0.01
-    low_l = 0
-    high_h = int(num)
-    ans = (high_h + low_l) / 2.0
+    low_low = 0
+    high_high = int(num)
+    ans = (high_high + low_low) / 2.0
     while abs(ans ** 2 - int(num)) >= epsilon:
         if ans ** 2 < int(num):
-            low_l = ans
+            low_low = ans
         else:
-            high_h = ans
-        ans = (low_l + high_h) / 2.0
+            high_high = ans
+        ans = (low_low + high_high) / 2.0
     print(ans)
 if __name__ == "__main__":
     main()
