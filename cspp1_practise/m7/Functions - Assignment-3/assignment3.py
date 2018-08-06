@@ -6,7 +6,7 @@ def paying_debt_off_in_a_year(initial_balance, annual_interest_rate):
     '''
     operation
     '''
-    epsilon_val = 0.05
+    epsilon_val = 0.03
     upper_bound = initial_balance*((1+annual_interest_rate/12.0)**12)/12.0
     mfp_money = 0
     lower_bound = initial_balance/12.0
