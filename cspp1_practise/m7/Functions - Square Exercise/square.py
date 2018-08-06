@@ -12,7 +12,7 @@ def square(x_num):
     x: int or float.
     '''
     return x_num ** 2
-# Correct
+
 def main():
     '''
     This is main function
