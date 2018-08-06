@@ -9,7 +9,7 @@
 # input: 49
 # output: 6.999999999999991
 '''
-Author : Pranav Surampudi
+Author : VISWAS
 Date : 03 August 2018
 Encoding: utf-8
 
