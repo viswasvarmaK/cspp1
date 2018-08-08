@@ -1,8 +1,10 @@
 '''
 Exercise: Assignment-1
 Author: Viswas
-Date: 8-8-2018
+Date: 8 Aug 2018
 '''
+
+
 def is_word_guessed(secret_word, letters_guessed):
     '''
     secret_word: string, the word the user is guessing
@@ -10,15 +12,15 @@ def is_word_guessed(secret_word, letters_guessed):
     returns: boolean, True if all the letters of secret_word are in letters_guessed;
       False otherwise
     '''
-    # FILL IN YOUR CODE HERE
-    count = 0
+    # FILL IN YOUR CODE HERE...
+    count=0
     for i in letters_guessed:
         if i in secret_word:
-            count += 1
-    if count == (len(secret_word)):
+            count+=1
+    if count==(len(secret_word)):
         return True
     else:
-        return False
+        return False        
 
 def main():
     '''
