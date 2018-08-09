@@ -70,6 +70,48 @@ def hangman(secretWord):
     Follows the other limitations detailed in the problem write-up.
     '''
     # FILL IN YOUR CODE HERE...
+    string_s = "abcdefghijklmnopqrstuvwxyz"
+    print("welcome to hangman game")
+    print("I am thinking of a word that is ", len(secretWord), "letters long.")
+    print("--------")
+    won = 0
+    li=[]
+    str_list = list(string_s)
+    secret_list = list(secretWord)
+    temp=''
+    for i in secretWord:
+        temp=temp+'_'
+    samp=list(temp)
+    g = 8
+    while(g > 0):
+        if ''.join(samp) == secretWord:
+            won =1
+            print("You won")
+            break
+        print("You have ",g," guesses left")
+        print("Available letters: ",''.join(str_list))
+        print("please guess a letter")
+        let=input()
+        if let in li:
+            print("You already entered this letter")
+        else:
+            li.append(let)
+            if let in secret_list:
+                for j in range(len(secretWord)):
+                    if let == secret_list[j]:
+                        samp[j]=let
+                str_list.remove(let)
+                print("Good guess :",''.join(samp))
+                print("--------")
+            else:
+                g -=1
+                str_list.remove(let)
+                print("Oops! that letter is not in my word :", ''.join(samp))
+                print("--------")
+    if won == 0:
+        print("You lost the game, the word is :",secretWord)
+
+
     pass
 
 
@@ -79,11 +121,11 @@ def main():
     Main function for the given program
     
     When you've completed your hangman function, uncomment these two lines
-	and run this file to test! (hint: you might want to pick your own
-	secretWord while you're testing)
-	'''
-	# secretWord = chooseWord(wordlist).lower()
-	# hangman(secretWord)
+    and run this file to test! (hint: you might want to pick your own
+    secretWord while you're testing)
+    '''
+    secretWord = chooseWord(wordlist).lower()
+    hangman(secretWord)
 
 
 if __name__ == "__main__":
