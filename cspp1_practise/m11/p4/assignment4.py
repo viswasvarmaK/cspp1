@@ -1,31 +1,30 @@
+'''
 #Exercise: Assignment-4
-#We are now ready to begin writing the code that interacts with the player. We'll be implementing the playHand function. This function allows the user to play out a single hand. First, though, you'll need to implement the helper calculateHandlen function, which can be done in under five lines of code.
-
-
-def calculateHandlen(hand):
-    """ 
+Author: Viswas
+Date : 10-8-2018
+'''
+def calculate_handlen(hand):
+    """
     Returns the length (number of letters) in the current hand.
-    
-    hand: dictionary (string int)
+    hand:dictionary (string int)
     returns: integer
     """
-    # TO DO... <-- Remove this comment when you code this function
+    # TO DO... <--Remove this comment when you code this function
     s_s = 0
     for i in hand.values():
-    	s_s= s_s + i
+        s_s = s_s + i
     return s_s
-    
-
 def main():
-	n=input()
-	adict={}
-	for i in range(int(n)):
-		data=input()
-		l=data.split()
-		adict[l[0]]=int(l[1])
-	print(calculateHandlen(adict))
-		
-
-
-if __name__== "__main__":
-	main()
+    '''
+    Main function
+    '''
+    n_n = input()
+    adict_a = {}
+    for i in range(int(n_n)):
+        data = input()
+        l_1 = data.split()
+        i += 1#this line is written only for pylint compliance
+        adict_a[l_1[0]] = int(l_1[1])
+    print(calculate_handlen(adict_a))
+if __name__ == "__main__":
+    main()
