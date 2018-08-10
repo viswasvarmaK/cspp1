@@ -38,6 +38,6 @@ def main():
         l_1 = data.split()
         adict[l_1[0]] = int(l_1[1])
     l_2 = input().split()
-    print(is_valid_word(word, adict,l_2))
+    print(is_valid_word(word, adict, l_2))
 if __name__ == "__main__":
     main()
