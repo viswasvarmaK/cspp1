@@ -6,20 +6,31 @@ def biggest(aDict):
     '''
     aDict: A dictionary, where all the values are lists.
 
-    returns: The key with the largest number of values associated with it
+    returns: The key with the largest number of values  associated with it
     '''
     # Your Code Here
+    values_v=list(aDict.values())
+    max_value= len(values_v[0])
+    keys_k=list(aDict.keys())
+    max_key= keys_k[0]
+    for i in aDict:
+        if len(aDict[i]) > max_value:
+            max_value = len(aDict[i])
+            max_key = i
+    return max_key        
+
     
 
 def main():
+    n=input()
     aDict={}
-    s=input()
-    l=s.split()
-    if l[0][0] not in aDict:
-        aDict[l[0][0]]=[l[1]]
-    else:
-        aDict[l[0][0]].append(l[1])
-        
+    for i in range(int(n)):
+        s=input()
+        l=s.split()
+        if l[0][0] not in aDict:
+            aDict[l[0][0]]=[l[1]]
+        else:
+            aDict[l[0][0]].append(l[1])
     print(biggest(aDict))
 
 
