@@ -34,9 +34,11 @@ def create_social_network(data):
         Empty dictionary is not None, it is a dictionary with no keys
     '''
 
+    
     # remove the pass below and start writing your code
+    n_n = input()
     l_1 = []
-    for i in data:
+    for i in range(n_n):
         l_1.append(input())
     a_dict = {}
     for i in l_1:
