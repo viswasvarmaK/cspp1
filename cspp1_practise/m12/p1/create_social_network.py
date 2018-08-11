@@ -52,7 +52,7 @@ def create_social_network(data):
             a_dict[l_2[0]] = l_2[1]
         for k in range(len(l_2[1])):
             a_dict[l_2[0][k]] = (a_dict[l_2[0][k]])
-    print(a_dict)
+    return a_dict
 def main():
     '''
         handling testcase input and printing output
