@@ -1,4 +1,7 @@
-''' Implement CipherTextMessage Class '''
+''' Implement CipherTextMessage Class
+Author:Viswas
+Date:23-8-2018
+ '''
 import string
 
 # Helper code begins
@@ -43,7 +46,7 @@ def is_word(word_list, word):
     False
     '''
     word = word.lower()
-    word = word.strip(" !@#$%^&*()-_+={}[]|\:;'<>?,./\"")
+    word = word.strip(" !@#$%^&*()-_+={}[]|:;'<>?,./\"")
     return word in word_list
 
 ### DO NOT MODIFY THIS FUNCTION ###
@@ -58,7 +61,7 @@ def get_story_string():
 
 WORDLIST_FILENAME = 'words.txt'
 
-class Message(object):
+class Message():
     ''' Message object '''
     ### DO NOT MODIFY THIS METHOD ###
     def __init__(self, text):
@@ -73,6 +76,7 @@ class Message(object):
         '''
         self.message_text = text
         self.valid_words = load_words("words.txt")
+        self.shift_dict = {}
 
     ### DO NOT MODIFY THIS METHOD ###
     def get_message_text(self):
@@ -163,6 +167,7 @@ class PlaintextMessage(Message):
         Hint: consider using the parent class constructor so less
         code is repeated
         '''
+        super(PlaintextMessage, self).__init__(text)
         self.text = text
         self.shift = shift
         self.valid_words = load_words("words.txt")
@@ -226,9 +231,11 @@ class CiphertextMessage(Message):
             self.message_text (string, determined by input text)
             self.valid_words (list, determined using helper function load_words)
         '''
+        super(CiphertextMessage, self).__init__(text)
         self.message_text = text
         self.valid_words = load_words("words.txt")[:]
         self.max_valid_words = 0
+        self.decrypted_message = ()
 
     def decrypt_message(self):
         '''
@@ -264,7 +271,8 @@ def decrypt_story():
     ''' Decrypt the story text using CiphertextMessage class and return the
         shift value and decrypted string in a tuple.
     '''
-    pass #delete this line when you write your code.
+    decrypt_code = CiphertextMessage(get_story_string())
+    return decrypt_code.decrypt_message()
 
 ### DO NOT MODIFY THIS METHOD ###
 def main():
