@@ -49,10 +49,10 @@ def main():
 
 
     # add matrix 1 and matrix 2
-    add_mat = add_matrix(matrix_1, matrix_2):
+    add_mat = add_matrix(matrix_1, matrix_2)
 
     # multiply matrix 1 and matrix 2
-    mul_mat = mult_matrix(matrix_1, matrix_2):
+    mul_mat = mult_matrix(matrix_1, matrix_2)
 
 if __name__ == '__main__':
     main()
