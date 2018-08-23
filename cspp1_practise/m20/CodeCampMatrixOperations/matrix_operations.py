@@ -6,6 +6,7 @@ def mult_matrix(matrix_1, matrix_2):
         and return None
         error message should be "Error: Matrix shapes invalid for mult"
     '''
+    result=[]
     for i in range(len(matrix_1)):
     # iterate through columns of Y
         for j in range(len(matrix_2[0])):
@@ -22,6 +23,7 @@ def add_matrix(matrix_1, matrix_2):
         and return None
         error message should be "Error: Matrix shapes invalid for addition"
     '''
+    result = []
     result = [[matrix_1[i][j] + matrix_2[i][j]  for j in range(len(matrix_1[0]))] for i in range(len(matrix_1))]
     return result
 def read_matrix():
