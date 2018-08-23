@@ -39,13 +39,13 @@ def main():
     nn_matrix = input().split()
     total_cells =  len(nn_matrix)
     row_cells = int(total_cells**0.5)
-    matrix_1 = [nn_matrix[i:i+row_cells] for i in xrange(0, total_cells, row_cells)]
+    matrix_1 = [nn_matrix[i:i+row_cells] for i in range(0, total_cells, row_cells)]
 
     # read matrix 2
     nn_matrix = input().split()
     total_cells =  len(nn_matrix)
     row_cells = int(total_cells**0.5)
-    matrix_2 = [nn_matrix[i:i+row_cells] for i in xrange(0, total_cells, row_cells)]
+    matrix_2 = [nn_matrix[i:i+row_cells] for i in range(0, total_cells, row_cells)]
 
 
     # add matrix 1 and matrix 2
