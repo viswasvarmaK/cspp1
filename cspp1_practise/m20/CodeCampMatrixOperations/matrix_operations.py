@@ -38,7 +38,7 @@ def add_matrix(m_1, m_2, r_1, r_2, c_1, c_2):
         return addition_matrix
     print("Error: Matrix shapes invalid for addition")
     return None #for pylint
-def read_matrix(matrix):
+def read_matrix():
     '''
         read the matrix dimensions from input
         create a list of lists and read the numbers into it
@@ -80,6 +80,7 @@ def main():
     # add_mat = add_matrix(matrix_1, matrix_2)
     # # multiply matrix 1 and matrix 2
     # mul_mat = mult_matrix(matrix_1, matrix_2)
+    '''main function '''
     (matrix_1, row_1, column_1, flag_1) = read_matrix()
 
     (matrix_2, row_2, column_2, flag_2) = read_matrix()
@@ -95,7 +96,5 @@ def main():
 
     else:
         print("Error: Invalid input for the matrix")
-
-
 if __name__ == '__main__':
     main()
