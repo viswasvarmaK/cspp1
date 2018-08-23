@@ -26,7 +26,7 @@ def add_matrix(matrix_1, matrix_2):
     result = []
     result = [[matrix_1[i][j] + matrix_2[i][j]  for j in range(len(matrix_1[0]))] for i in range(len(matrix_1))]
     return result
-def read_matrix():
+def read_matrix(matrix):
     '''
         read the matrix dimensions from input
         create a list of lists and read the numbers into it
@@ -34,20 +34,24 @@ def read_matrix():
         print an error message and return None
         error message should be "Error: Invalid input for the matrix"
     '''
-    pass
+    nn_matrix = input().split()
+    total_cells =  len(nn_matrix)
+    row_cells = int(total_cells**0.5)
+    matrix = [nn_matrix[i:i+row_cells] for i in range(0, total_cells, row_cells)]
 
 def main():
     # read matrix 1
-    nn_matrix = input().split()
-    total_cells =  len(nn_matrix)
-    row_cells = int(total_cells**0.5)
-    matrix_1 = [nn_matrix[i:i+row_cells] for i in range(0, total_cells, row_cells)]
-
+    # nn_matrix = input().split()
+    # total_cells =  len(nn_matrix)
+    # row_cells = int(total_cells**0.5)
+    # matrix_1 = [nn_matrix[i:i+row_cells] for i in range(0, total_cells, row_cells)]
+    matrix_1 = read_matrix(matrix_1)
     # read matrix 2
-    nn_matrix = input().split()
-    total_cells =  len(nn_matrix)
-    row_cells = int(total_cells**0.5)
-    matrix_2 = [nn_matrix[i:i+row_cells] for i in range(0, total_cells, row_cells)]
+    # nn_matrix = input().split()
+    # total_cells =  len(nn_matrix)
+    # row_cells = int(total_cells**0.5)
+    # matrix_2 = [nn_matrix[i:i+row_cells] for i in range(0, total_cells, row_cells)]
+    matrix_2 = read_matrix(matrix_2):
 
 
     # add matrix 1 and matrix 2
