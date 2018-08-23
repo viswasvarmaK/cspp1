@@ -45,13 +45,15 @@ def main():
     # total_cells =  len(nn_matrix)
     # row_cells = int(total_cells**0.5)
     # matrix_1 = [nn_matrix[i:i+row_cells] for i in range(0, total_cells, row_cells)]
+    matrix_1 = []
     matrix_1 = read_matrix(matrix_1)
     # read matrix 2
     # nn_matrix = input().split()
     # total_cells =  len(nn_matrix)
     # row_cells = int(total_cells**0.5)
     # matrix_2 = [nn_matrix[i:i+row_cells] for i in range(0, total_cells, row_cells)]
-    matrix_2 = read_matrix(matrix_2):
+    matrix_2 = []
+    matrix_2 = read_matrix(matrix_2)
 
 
     # add matrix 1 and matrix 2
