@@ -18,7 +18,7 @@ def mult_matrix(m_1, m_2, r_1, r_2, c_1):
             multiplication_matrix.append(temp)
         return multiplication_matrix
     print("Error: Matrix shapes invalid for mult")
-    return None #for pylint            
+    return None #for pylint
 
 def add_matrix(m_1, m_2, r_1, r_2, c_1, c_2):
     '''
