@@ -41,9 +41,9 @@ def create_social_network(data):
             list_1 = i.split(" follows ")
             list_2 = list_1[1],split(",")
             if list_1[0] in dictionary:
-                dictionary[list_1[0]].append(list_2)
+                dictionary[list_1[1]].append(list_2)
             else:
-                dictionary[list_2[0]] = list_2
+                dictionary[list_1[0]] = list_2
     return dictionary                
 def main():
     '''
