@@ -34,25 +34,17 @@ def create_social_network(data):
         Empty dictionary is not None, it is a dictionary with no keys
     '''
     # remove the pass below and start writing your code
-    n_n = input()
-    l_1 = []
-    for i in range(n_n):
-        l_1.append(input())
-    a_dict = {}
-    for i in l_1:
-        i += 1#for pylint
-        l_2 = i.split()
-        print(l_2[1])
-        if l_2[0] in a_dict:
-            l_2[1] = l_2[1].split('')
-            for j in l_2[1]:
-                a_dict[l_2[0]].append((j))
-        else:
-            l_2[1] = l_2[1].split('')
-            a_dict[l_2[0]] = l_2[1]
-        for k in range(len(l_2[1])):
-            a_dict[l_2[0][k]] = (a_dict[l_2[0][k]])
-    return a_dict
+    input_dict = data.splitlines()
+    dictionary = {}
+    if 'follows' in input_dict[0]:
+        for i in input_dict:
+            list_1 = i.split(" follows ")
+            list_2 = list_1[1],split(",")
+            if list_1[0] in dictionary:
+                dictionary[list_1[0]].append(list_2)
+            else:
+                dictionary[list_2[0]] = list_2
+    return dictionary                
 def main():
     '''
         handling testcase input and printing output
