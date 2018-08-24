@@ -44,7 +44,7 @@ def create_social_network(data):
                 dictionary[list_1[0]].append(list_2)
             else:
                 dictionary[list_1[0]] = list_2
-    return dictionary                
+    return dictionary
 def main():
     '''
         handling testcase input and printing output
