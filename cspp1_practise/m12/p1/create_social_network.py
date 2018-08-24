@@ -39,7 +39,7 @@ def create_social_network(data):
     if 'follows' in input_dict[0]:
         for i in input_dict:
             list_1 = i.split(" follows ")
-            list_2 = list_1[1],split(",")
+            list_2 = list_1[1].split(",")
             if list_1[0] in dictionary:
                 dictionary[list_1[0]].append(list_2)
             else:
