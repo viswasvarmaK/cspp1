@@ -18,7 +18,7 @@ def follow(network, arg1, arg2):
         network[arg1].append(arg2)
     else:
         follow_mem = []
-        follow_mem.append(arg1)
+        follow_mem.append(arg2)
         network[arg1] = follow_mem
     return network        
 
