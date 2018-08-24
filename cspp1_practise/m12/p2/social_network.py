@@ -20,7 +20,7 @@ def follow(network, arg1, arg2):
         follow_mem = []
         follow_mem.append(arg2)
         network[arg1] = follow_mem
-    return network        
+    return network
 
 def unfollow(network, arg1, arg2):
     '''
@@ -34,7 +34,7 @@ def unfollow(network, arg1, arg2):
     # remove the pass below and start writing your code
     if arg2 in network[arg1]:
         network[arg1].remove(arg2)
-    return network    
+    return network
 
 def delete_person(network, arg1):
     '''
@@ -52,7 +52,7 @@ def delete_person(network, arg1):
             network[i].remove(arg1)
     if arg1 in network:
         del network[arg1]
-    return network            
+    return network
 
 def main():
     '''
