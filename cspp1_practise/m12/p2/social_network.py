@@ -14,12 +14,13 @@ def follow(network, arg1, arg2):
         update the network dictionary and return it
     '''
     # remove the pass below and start writing your code
-    network = network
-    arg1 = 0
-    arg2 = 1
-    if arg1 < arg2:
-        return arg1
-    return arg2
+    if arg1 in network:
+        network[arg1].append(arg2)
+    else:
+        follow_mem = []
+        follow_mem.append(arg1)
+        network[arg1] = follow_mem
+    return network        
 
 def unfollow(network, arg1, arg2):
     '''
@@ -31,12 +32,9 @@ def unfollow(network, arg1, arg2):
         update the network dictionary and return it
     '''
     # remove the pass below and start writing your code
-    network = network
-    arg1 = 0
-    arg2 = 1
-    if arg1 < arg2:
-        return arg1
-    return arg2
+    if arg2 in network[arg1]:
+        network[arg1].remove(arg2)
+    return network    
 
 def delete_person(network, arg1):
     '''
@@ -49,12 +47,12 @@ def delete_person(network, arg1):
         update the network dictionary and return it
     '''
     # remove the pass below and start writing your code
-    network = network
-    arg1 = 0
-    arg2 = 1
-    if arg1 < arg2:
-        return arg1
-    return arg2
+    for i in network:
+        if arg1 in network[i]:
+            network[i].remove(arg1)
+    if arg2 in network:
+        del network[arg1]
+    return network            
 
 def main():
     '''
