@@ -7,7 +7,7 @@ def main():
     lines = ""
     for i in range(no_of_lines):
         lines += input() + "\n"
-print(lines)
+    print(lines)
 
 if __name__ == '__main__':
     main()
