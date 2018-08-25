@@ -11,13 +11,15 @@ def clean_string(string):
     str_1 = ""
     for char in string:
         if char in "!@#$%^&*() .":
-            char == ""
+            #char == ""
         else:
             str_1 += char
     return str_1
 def main():
+    '''
+    main function
+    '''
     string = input()
     print(clean_string(string))
-
 if __name__ == '__main__':
     main()
