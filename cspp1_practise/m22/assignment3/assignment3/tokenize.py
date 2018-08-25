@@ -4,10 +4,20 @@ each word
 '''
 
 def tokenize(string):
-    pass
+	dict = {}
+	str_1 = string
+	str_1 = str_1.split(" ")
+	for i in range(str_1):
+		if i not in dict:
+			d[i] += 1
+		else:
+		    dict.update('i':1)
+	return string	    	
+
             
 def main():
-    
+    string = input()
+    print(tokenize(string))
 
 if __name__ == '__main__':
     main()
