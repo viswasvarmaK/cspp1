@@ -5,7 +5,7 @@ alphabets in both upper and lower case and numbers.
 
 def clean_string(string):
     for char in string:
-        if char == '!' or char == '@' or char == '#' or char == '$' or char == '%' or char == '^' or char == '&' or char == '*' or char == '(' or char == ')':
+        if char == '!' or char == '@' or char == '#' or char == '$' or char == '%' or char == '^' or char == '&' or char == '*' or char == '(' or char == ')' or char == ' ':
             string.remove(char)
     return string
 def main():
