@@ -33,7 +33,6 @@ def clean_string(string):
     for char in string:
         if char in "!@#$%^&*()":
             char == ""
-            str_1 += char
         else:
             str_1 += char
                 
