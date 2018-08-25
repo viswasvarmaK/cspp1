@@ -33,7 +33,11 @@ def clean_string(string):
     for char in string:
         if char in "!@#$%^&*()":
             char == ""
-        str_1 += char
+            str_1 += char
+        else:
+            str_1 += char
+                
+
     #     if char == '!' or char == '@' or char == '#' or char == '$' or char == '%' or char == '^' or char == '&' or char == '*' or char == '(' or char == ')' or char == ' ':
     
     # removed = original.replace("!@#$%^&*()", "")
