@@ -14,8 +14,6 @@ def tokenize(string):
         else:
            # dict.update('i':1)
     return string
-
-            
 def main():
     string = input()
     print(tokenize(string))
