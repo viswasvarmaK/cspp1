@@ -31,7 +31,7 @@ def clean_string(string):
     #         str_1.translate(None, ' ')
     str_1 = ""
     for char in string:
-        if char in "!@#$%^&*()":
+        if char in "!@#$%^&*() ":
             char == ""
         else:
             str_1 += char
