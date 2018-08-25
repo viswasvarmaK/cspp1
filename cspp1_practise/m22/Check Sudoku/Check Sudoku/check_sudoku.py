@@ -37,7 +37,7 @@
 import random
 numbers = [1,2,3,4,5,6,7,8,9]
 
-def makeBoard():
+def make_board():
     '''
     sub function
     '''
@@ -46,7 +46,7 @@ def makeBoard():
         board = attemptBoard()
     return board
 
-def attemptBoard():
+def attempt_board():
     '''
     sub function
     '''
@@ -86,7 +86,7 @@ def attemptBoard():
     return board
 
 
-def printBoard(board):
+def print_board(board):
     '''
     sub function
     '''
@@ -121,9 +121,9 @@ def main():
         row = input().split(' ')
         sudoku.append(row)
     # call solution function and print result to console
-    print(printBoard(board))
-    print(makeBoard())
-    print(attemptBoard())
+    print(print_board(board))
+    print(make_board())
+    print(attempt_board())
 
 if __name__ == '__main__':
     main()
