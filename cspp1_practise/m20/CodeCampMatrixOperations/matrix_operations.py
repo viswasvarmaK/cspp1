@@ -10,17 +10,28 @@ def mult_matrix(m1, m2):
         and return None
         error message should be "Error: Matrix shapes invalid for mult"
     '''
-   
+    result = [[0 for j in range(len(m2[0]))] for _ in range(len(m1))]
+    if len(m1[0]) == len(m2):
+    	for i in range(len(m1)):
+    		for j in range(len(m2[0])):
+    			for j in range(len(m2)):
+    				result[i][j] += int(m1[i][k] * int(m2[k][j]))
+    	return result
+    else:
+        print("error: Matrix shapes invalid for mult")
+        return None				
+
 
 def add_matrix(m1, m2):
-    '''
-        check if the matrix shapes are similar
-        add the matrices and return the result matrix
-        print an error message if the matrix shapes are not valid for addition
-        and return None
-        error message should be "Error: Matrix shapes invalid for addition"
-    '''
-    
+	''''''
+	if(len(m1)) == len(m2) and len(m1[0] == len(m2[0])):
+		result = []
+		for i in range(len(m1)):
+			sample = []
+			for j in range(len(m2)):
+				sample.append(int(m1[j]) + int(m2[j])
+			result.append(sample)
+			
 def read_matrix():
     '''
         read the matrix dimensions from input
