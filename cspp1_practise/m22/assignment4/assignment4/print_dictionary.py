@@ -9,7 +9,7 @@ def print_dictionary(dictionary):
     sub fun
     '''
     sort_1 = sorted(dictionary)
-    for _ in sort_1:
+    for i in sort_1:
         print(i+" "+"-"+" "+str(dictionary[i]))
 
 def main():
