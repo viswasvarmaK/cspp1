@@ -38,12 +38,18 @@ import random
 numbers = [1,2,3,4,5,6,7,8,9]
 
 def makeBoard():
+    '''
+    sub function
+    '''
     board = None
     while board is None:
         board = attemptBoard()
     return board
 
 def attemptBoard():
+    '''
+    sub function
+    '''
     board = [[None for _ in range(9)] for _ in range(9)]
     for i in range(9):
         for j in range(9):
@@ -81,6 +87,9 @@ def attemptBoard():
 
 
 def printBoard(board):
+    '''
+    sub function
+    '''
     spacer = "++---+---+---++---+---+---++---+---+---++"
     print (spacer.replace('-','='))
     for i,line in enumerate(board):
