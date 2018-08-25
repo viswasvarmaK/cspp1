@@ -7,7 +7,7 @@ def clean_string(string):
     string = list(string)
     for char in string:
         if char in "!@#$%^&*()":
-            char = ""
+            string.remove(char)
     return string
 def main():
     string = input()
