@@ -4,8 +4,10 @@
 Author : viswas
 Date: 25-8-2018
 '''
-
 def clean_string(string):
+    '''
+    sun function
+    '''
     str_1 = ""
     for char in string:
         if char in "!@#$%^&*() .":
