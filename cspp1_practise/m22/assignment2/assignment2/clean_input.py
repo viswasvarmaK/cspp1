@@ -7,27 +7,27 @@ def clean_string(string):
     str_1 = string
     for i in str_1:
         if i == '!':
-            str_1.translate('', '!'):   
+            str_1.translate('', '!')   
         if i == '@':
-            str_1.translate('', '@'):
+            str_1.translate('', '@')
         if i == '#':
-            str_1.translate('', '#'):
+            str_1.translate('', '#')
         if i == '$':
-            str_1.translate('', '$'):
+            str_1.translate('', '$')
         if i == '%':
-            str_1.translate('', '%'):
+            str_1.translate('', '%')
         if i == '^':
-            str_1.translate('', '^'):
+            str_1.translate('', '^')
         if i == '&':
-            str_1.translate('', '&'):
+            str_1.translate('', '&')
         if i == '*':
-            str_1.translate('', '*'):
+            str_1.translate('', '*')
         if i == '(':
-            str_1.translate('', '('):
+            str_1.translate('', '(')
         if i == ')':
-            str_1.translate('', ')'):
+            str_1.translate('', ')')
         if i == ' ':
-            str_1.translate('', ' '):
+            str_1.translate('', ' ')
 
     return str_1
     # for char in string:
