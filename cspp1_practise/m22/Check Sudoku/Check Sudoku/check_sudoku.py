@@ -115,4 +115,4 @@ def main():
     print(attemptBoard())
 
 if __name__ == '__main__':
-    main()        else: print(spacer)
+    main()
