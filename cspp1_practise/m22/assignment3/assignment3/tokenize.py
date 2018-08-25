@@ -13,7 +13,7 @@ def tokenize(string):
             d[i] += 1
         else:
            # dict.update('i':1)
-    return string
+    return str_1
 def main():
     string = input()
     print(tokenize(string))
