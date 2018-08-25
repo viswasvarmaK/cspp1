@@ -6,7 +6,7 @@ alphabets in both upper and lower case and numbers.
 def clean_string(string):
     str_1 = string
     str_1 = "Special $#! characters   spaces 888323"
->>> ''.join(e for e in str_1 if e.isalnum())
+    ''.join(e for e in str_1 if e.isalnum())
     # for i in str_1:
     #     if i == '!':
     #         str_1.translate(None, '!')   
