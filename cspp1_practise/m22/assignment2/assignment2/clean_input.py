@@ -1,37 +1,11 @@
 '''
-Write a function to clean up a given string by removing the special characters and retain 
-alphabets in both upper and lower case and numbers.
-
+#Write a function to clean up a given string by removing the special characters and retain
+#alphabets in both upper and lower case and numbers.
 Author : viswas
 Date: 25-8-2018
 '''
 
 def clean_string(string):
-    # str_1 = string
-    # ''.join(e for e in str_1 if e.isalnum())
-    # for i in str_1:
-    #     if i == '!':
-    #         str_1.translate(None, '!')
-    #     if i == '@':
-    #         str_1.translate(None, '@')
-    #     if i == '#':
-    #         str_1.translate(None, '#')
-    #     if i == '$':
-    #         str_1.translate(None, '$')
-    #     if i == '%':
-    #         str_1.translate(None, '%')
-    #     if i == '^':
-    #         str_1.translate(None, '^')
-    #     if i == '&':
-    #         str_1.translate(None, '&')
-    #     if i == '*':
-    #         str_1.translate(None, '*')
-    #     if i == '(':
-    #         str_1.translate(None, '(')
-    #     if i == ')':
-    #         str_1.translate(None, ')')
-    #     if i == ' ':
-    #         str_1.translate(None, ' ')
     str_1 = ""
     for char in string:
         if char in "!@#$%^&*() .":
@@ -39,13 +13,6 @@ def clean_string(string):
         else:
             str_1 += char
     return str_1
-    #     if char == '!' or char == '@' or char == '#' or char == '$' or char == '%' or char == '^' or char == '&' or char == '*' or char == '(' or char == ')' or char == ' ':
-    
-    # removed = original.replace("!@#$%^&*()", "")
-    #     else:
-    #         str_1.append(char)
-    # return str_1
-    
 def main():
     string = input()
     print(clean_string(string))
