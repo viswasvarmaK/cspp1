@@ -7,9 +7,9 @@ def frequency_graph(dictionary):
     sort_1 = sorted(dictionary)
     for i in sort1:
 def main():
-	'''
-	main fun
-	'''
+    '''
+    main fun
+    '''
     dictionary = eval(input())
     frequency_graph(dictionary)
 
