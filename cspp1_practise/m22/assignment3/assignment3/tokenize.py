@@ -12,7 +12,7 @@ def tokenize(string):
 		if i not in dict:
 			d[i] += 1
 		else:
-		    dict.update('i':1)
+		   # dict.update('i':1)
 	return string	    	
 
             
