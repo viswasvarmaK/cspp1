@@ -121,7 +121,7 @@ def main():
         row = input().split(' ')
         sudoku.append(row)
     # call solution function and print result to console
-    print(print_board(board))
+    print(print_board())
     print(make_board())
     print(attempt_board())
 
