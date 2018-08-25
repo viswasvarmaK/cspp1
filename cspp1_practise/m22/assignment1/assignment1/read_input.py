@@ -11,7 +11,7 @@ def main():
     str_1 = ""
     input_1 = list(input())
     for _ in range(input_1):
-        input_2 = input
+        input_2 = input_1
         str_1 = input_2
         print(str_1)
 
