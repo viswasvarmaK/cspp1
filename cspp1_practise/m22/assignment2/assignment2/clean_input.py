@@ -7,7 +7,7 @@ def clean_string(string):
     str_1 = ""
     for char in str_1:
         if char == '!' or char == '@' or char == '#' or char == '$' or char == '%' or char == '^' or char == '&' or char == '*' or char == '(' or char == ')' or char == ' ':
-            char = ''
+            removed = original.replace("!@#$%^&*()", "")
         else:
             str_1.append(char)    
     return str_1
