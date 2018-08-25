@@ -4,10 +4,12 @@ alphabets in both upper and lower case and numbers.
 '''
 
 def clean_string(string):
-    str_1 = string
+    str_1 = ""
     for char in str_1:
         if char == '!' or char == '@' or char == '#' or char == '$' or char == '%' or char == '^' or char == '&' or char == '*' or char == '(' or char == ')' or char == ' ':
-            str_1.remove(char)
+            char = ''
+        else:
+            str_1.append(char)    
     return str_1
 def main():
     string = input()
