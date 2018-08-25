@@ -8,7 +8,7 @@ def main():
     # for i in range(no_of_lines):
     #     lines += input() + "\n"
     # print(lines)
-    str_1
+    str_1 = ''
     input_1 = int(input())
     for _ in range(input_1):
         input_2 = input_1
