@@ -14,7 +14,7 @@ def check_sudoku(sudoku):
         The function has to return True for a valid sudoku grid and false otherwise
     '''
     print(sudoku)
-    return None
+    return False
 
 def main():
     '''
