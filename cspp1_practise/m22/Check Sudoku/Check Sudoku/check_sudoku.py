@@ -94,7 +94,10 @@ def printBoard(board):
                     line[6][0] if line[6][1] else ' ',
                     line[7][0] if line[7][1] else ' ',
                     line[8][0] if line[8][1] else ' ',))
-        if (i+1) % 3 == 0: print(spacer.replace('-','='))
+        if (i+1) % 3 == 0:
+            print(spacer.replace('-','='))
+        else:
+            print(spacer)
 def main():
     '''
         main function to read input sudoku from console
