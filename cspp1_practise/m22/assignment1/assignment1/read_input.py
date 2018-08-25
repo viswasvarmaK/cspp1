@@ -1,19 +1,17 @@
 '''
 Write a python program to read multiple lines of text input and store the input into a string.
+Author: Viswas
+Date : 25-8-2018
 '''
-
 def main():
-    # no_of_lines = input().split(" ")
-    # lines = ""
-    # for i in range(no_of_lines):
-    #     lines += input() + "\n"
-    # print(lines)
+    '''
+    main function
+    '''
     str_1 = ''
     input_1 = int(input())
     for _ in range(input_1):
         input_2 = input()
         str_1 = input_2
         print(str_1)
-
 if __name__ == '__main__':
     main()
